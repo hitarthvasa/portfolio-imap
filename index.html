@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hitarth Vasa | Learning and Growing</title>
+<meta name="description" content="Hitarth Vasa is a Data Science student at MPSTME, NMIMS. He builds with AI, leads teams and keeps learning.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hitarth Vasa | Learning and Growing">
+<meta property="og:description" content="Data Science student at MPSTME, NMIMS. Builds with AI, leads teams and keeps learning.">
+<meta property="og:url" content="https://hitarthvasa.github.io/portfolio/">
+<meta property="og:image" content="https://hitarthvasa.github.io/portfolio/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hitarth Vasa, Learning and Growing">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hitarth Vasa | Learning and Growing">
+<meta name="twitter:image" content="https://hitarthvasa.github.io/portfolio/assets/og-image.jpg">
+<meta name="theme-color" content="#F4F4F1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%239DB8D6'/%3E%3Ctext x='50' y='67' font-size='52' font-weight='900' text-anchor='middle' fill='%23111' font-family='Arial Black,Arial,sans-serif'%3EHV%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="flower" viewBox="0 0 100 100">
+      <g fill="none" stroke="currentColor" stroke-width="9">
+        <circle cx="35" cy="50" r="22"/><circle cx="65" cy="50" r="22"/>
+        <circle cx="50" cy="35" r="22"/><circle cx="50" cy="65" r="22"/>
+      </g>
+      <circle cx="50" cy="50" r="7" fill="currentColor"/>
+    </symbol>
+    <filter id="melt" x="-10%" y="-30%" width="120%" height="160%">
+      <feTurbulence id="meltNoise" type="fractalNoise" baseFrequency="0.012 0.05" numOctaves="2" seed="4" result="noise"/>
+      <feDisplacementMap id="meltMap" in="SourceGraphic" in2="noise" scale="60" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+
+<a class="skip" href="#who">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <span class="mark mark--tl">+</span><span class="mark mark--tr">+</span>
+  <span class="mark mark--bl">+</span><span class="mark mark--br">+</span>
+  <div class="loader__bar"><span id="loaderFill"></span></div>
+  <svg class="loader__word" viewBox="0 0 900 180" role="presentation">
+    <text x="450" y="140" text-anchor="middle" filter="url(#melt)">LOADING</text>
+  </svg>
+  <p class="loader__pct"><span id="loaderPct">0</span>%</p>
+</div>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" aria-label="Hitarth Vasa, back to top">
+    <span class="nav__mono" aria-hidden="true">HV</span>
+    <span>HITARTH VASA</span>
+  </a>
+  <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">Menu</button>
+  <nav class="nav__links" id="navLinks" aria-label="Main">
+    <a href="#who">About</a>
+    <a href="#work">Work</a>
+    <a href="#years">Journey</a>
+    <a href="#people">People</a>
+    <a href="#outside">Play</a>
+    <a href="#gallery" id="navGallery" hidden>Good Times</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="nav__cta" href="#contact">Let&rsquo;s talk <svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 8 L8 2 M3 2 H8 V7"/></svg></a>
+</header>
+
+<main>
+
+<!-- 01 HERO -->
+<section class="hero" id="top">
+  <svg class="hero__arcs" viewBox="0 0 1600 790" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <circle cx="1700" cy="1010" r="520" pathLength="1"/>
+  </svg>
+  <div class="hero__info">
+    <p class="hero__edu">B.Tech Data Science<br>NMIMS MPSTME</p>
+    <span class="hero__rule" aria-hidden="true"></span>
+    <p class="hero__tag">Learning<br>and Growing.</p>
+  </div>
+  <h1 class="hero__name" aria-label="Hitarth Vasa">
+    <span class="hero__line"><span>HITARTH</span></span>
+    <span class="hero__line"><span>VASA</span></span>
+  </h1>
+  <img class="hero__photo" src="assets/hero.webp" width="765" height="1300" alt="Hitarth Vasa smiling in sunglasses and a brown polo shirt">
+  <div class="hero__ghost" aria-hidden="true"><div class="hero__ghostname"><span>HITARTH</span><span>VASA</span></div></div>
+  <p class="hero__coords">19.0760&deg; N<br>72.8777&deg; E</p>
+  <a class="hero__down" href="#who" aria-label="Scroll down">SCROLL DOWN
+    <svg width="14" height="44" viewBox="0 0 14 44" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M7 2 V40 M2 34 L7 40 L12 34"/></svg>
+  </a>
+</section>
+
+<!-- 02 WHO I AM -->
+<section class="section who" id="who">
+  <span class="mark mark--tl">+</span><span class="mark mark--tr">+</span>
+  <div class="wrap">
+    <h2 class="big">NOT JUST<br>A DATA GUY.</h2>
+    <div class="who__grid">
+      <div class="who__text">
+        <p>I&rsquo;m Hitarth, a Data Science student at MPSTME, NMIMS. I like building things with technology, exploring AI, working with people and leading teams. Most of all, I like finding out how technology can solve real problems.</p>
+        <p>This isn&rsquo;t a resume. It&rsquo;s a record of what I&rsquo;ve been learning, building and becoming, and I&rsquo;m still learning.</p>
+        <ul class="chips" aria-label="How I would describe myself">
+          <li>Curious</li><li>Experimental</li><li>Ambitious</li><li>Creative</li><li>Technical</li><li>People-oriented</li><li>Still learning</li>
+        </ul>
+      </div>
+      <div class="who__side">
+      <figure class="who__photo"><img src="assets/gallery/suited-up.jpg" width="1100" height="733" loading="lazy" alt="Hitarth in a black suit, smiling, on a tiled walkway"><figcaption>Hitarth Vasa, B.Tech Data Science</figcaption></figure>
+      <div class="who__steps" aria-label="My leadership journey">
+        <p class="who__steps-title">How I grew</p>
+        <ol class="steps">
+          <li><strong>Participation</strong><span>Joining in, showing up</span></li>
+          <li><strong>Responsibility</strong><span>Owning a role</span></li>
+          <li><strong>Leadership</strong><span>Leading the team</span></li>
+        </ol>
+      </div>
+      </div>
+    </div>
+
+    <h3 class="sub">Skills and interests</h3>
+    <div class="skills">
+      <div class="skills__col">
+        <h4>Data and AI</h4>
+        <ul><li>Data Science</li><li>Machine Learning</li><li>Research</li></ul>
+      </div>
+      <div class="skills__col">
+        <h4>Building</h4>
+        <ul><li>Next.js and Supabase</li><li>Product building</li></ul>
+      </div>
+      <div class="skills__col">
+        <h4>People and growth</h4>
+        <ul><li>Marketing and growth</li><li>Team leadership</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 SELECTED WORK -->
+<section class="section work" id="work">
+  <span class="mark mark--tl">+</span><span class="mark mark--tr">+</span>
+  <div class="wrap">
+    <h2 class="big">SELECTED<br>WORK</h2>
+    <p class="lede">Four projects where I tried to point data and AI at something real. Tap a card to open it.</p>
+
+    <div class="fan" id="fan" role="group" aria-label="Projects">
+      <button class="card card--red" data-id="solace" aria-controls="detail" aria-expanded="true">
+        <span class="card__cat">AI &times; Mental wellness</span>
+        <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="#111" stroke-width="5"><circle cx="60" cy="60" r="14"/><circle cx="60" cy="60" r="30"/><circle cx="60" cy="60" r="46"/></g></svg>
+        <span class="card__title">Solace</span>
+      </button>
+      <button class="card card--ink" data-id="bayora" aria-controls="detail" aria-expanded="false">
+        <span class="card__cat">AI safety</span>
+        <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><path d="M60 12 L100 28 V60 C100 86 80 102 60 110 C40 102 20 86 20 60 V28 Z" fill="none" stroke="#F4F4F2" stroke-width="5"/><path d="M60 34 L48 62 H66 L54 90" fill="none" stroke="#9DB8D6" stroke-width="6" stroke-linejoin="round"/></svg>
+        <span class="card__title">Bayora</span>
+      </button>
+      <button class="card card--paper" data-id="crisis" aria-controls="detail" aria-expanded="false">
+        <span class="card__cat">Disaster response</span>
+        <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="#111" stroke-width="4"><path d="M10 40 H110 M10 70 H110 M10 100 H110 M30 20 V110 M60 20 V110 M90 20 V110"/></g><path d="M8 84 Q24 64 40 84 T72 84 T104 84 T136 84" fill="none" stroke="#3F6288" stroke-width="7"/></svg>
+        <span class="card__title">Crisis Grid</span>
+      </button>
+      <button class="card card--dark" data-id="skillsync" aria-controls="detail" aria-expanded="false">
+        <span class="card__cat">Data &times; Employment</span>
+        <svg class="card__art" viewBox="0 0 120 120" aria-hidden="true"><rect x="12" y="62" width="18" height="46" rx="4" fill="#DE4B38"/><rect x="38" y="44" width="18" height="64" rx="4" fill="#F08A24"/><rect x="64" y="28" width="18" height="80" rx="4" fill="#F2C230"/><rect x="90" y="12" width="18" height="96" rx="4" fill="#3FA45B"/></svg>
+        <span class="card__title">SkillSync Maharashtra</span>
+      </button>
+    </div>
+
+    <article class="detail" id="detail" aria-live="polite"></article>
+
+    <div class="research">
+      <h3 class="sub">Research on the side</h3>
+      <div class="research__grid">
+        <div>
+          <h4>Context Switching Index</h4>
+          <p>An SSDI research idea about measuring context switching with data. It uses ANOVA, MANOVA, statistical analysis and predictive modelling, and is planned as an IEEE-style research paper.</p>
+        </div>
+        <div>
+          <h4>DCT Compression</h4>
+          <p>A technical project on image and data compression using the discrete cosine transform.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 STORY: LEARNING / BUILDING / BECOMING -->
+<section class="break story" id="break" aria-label="Learning, building, becoming">
+  <div class="story__stage">
+    <div class="story__glow" aria-hidden="true"></div>
+    <span class="mark mark--tl">+</span><span class="mark mark--tr">+</span>
+    <div class="story__badge" aria-hidden="true">
+      <svg class="story__ring" viewBox="0 0 400 400">
+        <defs><path id="ringPath" d="M200,200 m-165,0 a165,165 0 1,1 330,0 a165,165 0 1,1 -330,0"/></defs>
+        <circle cx="200" cy="200" r="195" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="6 9" opacity=".6"/>
+        <text><textPath href="#ringPath" textLength="1030" lengthAdjust="spacing">LEARNING AND GROWING * LEARNING AND GROWING * </textPath></text>
+      </svg>
+      <div class="story__mini">HV</div>
+    </div>
+
+    <p class="story__quote">&ldquo;This is what I&rsquo;ve been learning, building and becoming.&rdquo;</p>
+
+    <ul class="story__words">
+      <li class="story__item">
+        <span class="story__word">LEARNING</span>
+        <p class="story__line">Data Science at MPSTME, NMIMS, with a lot of curiosity about AI and machine learning.</p>
+      </li>
+      <li class="story__item">
+        <span class="story__word">BUILDING</span>
+        <p class="story__line">Solace, Crisis Grid, SkillSync Maharashtra and Bayora: four projects where I pointed data and AI at something real.</p>
+      </li>
+      <li class="story__item">
+        <span class="story__word">BECOMING</span>
+        <p class="story__line">From House Captain at school to Head of Marketing at IETE-SF, and still growing into it.</p>
+      </li>
+    </ul>
+
+    <ol class="story__nav" aria-hidden="true">
+      <li><b>01</b> Learning</li>
+      <li><b>02</b> Building</li>
+      <li><b>03</b> Becoming</li>
+    </ol>
+  </div>
+</section>
+
+<!-- 05 THE YEARS -->
+<section class="section years" id="years">
+  <span class="mark mark--tl">+</span><span class="mark mark--tr">+</span>
+  <div class="wrap">
+    <h2 class="big">THE YEARS</h2>
+    <div class="years__grid">
+      <div class="track">
+        <h3 class="sub">School and college</h3>
+        <ol class="timeline" id="tlEdu">
+          <li><span class="tl__year">2008 &ndash; 2022</span><strong>Pawar Public School</strong></li>
+          <li><span class="tl__year">2022 &ndash; 2024</span><strong>Narayana e-Techno School</strong></li>
+          <li><span class="tl__year">2024 &ndash; 2028</span><strong>B.Tech in Data Science</strong><span>Mukesh Patel School of Technology and Management (MPSTME), NMIMS</span></li>
+        </ol>
+      </div>
+      <div class="track">
+        <h3 class="sub">Leading, step by step</h3>
+        <ol class="timeline" id="tlLead">
+          <li><span class="tl__year">2018 &ndash; 2019</span><strong>House Captain</strong><span>Pawar Public School</span></li>
+          <li><span class="tl__year">2019 &ndash; 2020</span><strong>House Prefect</strong><span>Pawar Public School</span></li>
+          <li><span class="tl__year">2021 &ndash; 2022</span><strong>Vice President, School Council</strong><span>Pawar Public School</span></li>
+          <li><span class="tl__year">College</span><strong>Head of Marketing, IETE-SF</strong><span>After starting as Marketing Executive</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 PEOPLE -->
+<section class="section people" id="people">
+  <span class="mark mark--tl">+</span><span class="mark mark--tr">+</span>
+  <div class="wrap">
+    <h2 class="big">PEOPLE</h2>
+    <p class="lede">I do my best work with a team around me. Here is where I have led, organised and worked with others.</p>
+    <div class="people__grid">
+      <article class="pcard pcard--red">
+        <h3>IETE-SF, NMIMS</h3>
+        <p class="pcard__role">Head of Marketing</p>
+        <ol class="path" aria-label="Role progression">
+          <li>Marketing Executive</li><li>Sub-head / Core</li><li>Head of Marketing</li>
+        </ol>
+        <p>Marketing, outreach, campaigns, event promotion, partnerships, brand communication, team coordination and external communication.</p>
+        <p class="pcard__note">Worked on ADAPT 5.0, Kibotech ACE Smart Governance, and collaborations with Red Bull and Mercedes.</p>
+      </article>
+      <article class="pcard pcard--ink">
+        <h3>EDT World</h3>
+        <p class="pcard__role">AI + Brand Growth Intern</p>
+        <p>Started as a Growth Operations Intern. Work across AI, brand growth, B2B, sales, growth operations, strategy and lead generation for Everyday Design &amp; Technology.</p>
+        <p class="pcard__note">Brand idea: #EverydayExtraordinary</p>
+      </article>
+      <article class="pcard pcard--paper">
+        <h3>Social Conclave</h3>
+        <p class="pcard__role">Informals Sub-head</p>
+        <p>Event management, team coordination and running events on the ground with the college community.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 07 OUTSIDE THE SCREEN -->
+<section class="section outside" id="outside">
+  <span class="mark mark--tl">+</span><span class="mark mark--tr">+</span>
+  <div class="wrap">
+    <h2 class="big">OUTSIDE<br>THE SCREEN</h2>
+    <p class="lede">Music, drums and cricket. Play them below.</p>
+    <div class="outside__grid">
+      <div class="drums">
+        <h3>Drums</h3>
+        <p class="hint">Tap a pad, or press A, S, D and F.</p>
+        <div class="pads" id="pads">
+          <button class="pad" data-sound="kick" data-key="a" aria-label="Kick drum, key A"><span>Kick</span><kbd>A</kbd></button>
+          <button class="pad" data-sound="snare" data-key="s" aria-label="Snare drum, key S"><span>Snare</span><kbd>S</kbd></button>
+          <button class="pad" data-sound="hat" data-key="d" aria-label="Hi-hat, key D"><span>Hi-hat</span><kbd>D</kbd></button>
+          <button class="pad" data-sound="tom" data-key="f" aria-label="Tom drum, key F"><span>Tom</span><kbd>F</kbd></button>
+        </div>
+      </div>
+      <div class="cricket hc" id="hc">
+        <h3>Hand cricket</h3>
+        <p class="hint">Show 1 to 6 fingers (thumbs-up is 6). Same number as the computer and you are out.</p>
+
+        <div class="hc__board" aria-live="polite">
+          <div class="hc__side"><span class="hc__label">You</span><span class="hc__score" id="hcYouScore">0</span></div>
+          <div class="hc__side"><span class="hc__label">Computer</span><span class="hc__score" id="hcCpuScore">0</span></div>
+          <div class="hc__side hc__side--target" id="hcTargetBox" hidden><span class="hc__label">Target</span><span class="hc__score" id="hcTarget">0</span></div>
+        </div>
+
+        <div class="hc__faceoff" aria-hidden="true">
+          <div class="hc__num"><small>You</small><b id="hcYouNum">-</b></div>
+          <span class="hc__vs">vs</span>
+          <div class="hc__num"><small>Computer</small><b id="hcCpuNum">-</b></div>
+        </div>
+
+        <p class="callout" id="hcCallout" role="status">Tap a number to play your first ball, or start the camera.</p>
+
+        <div class="hc__cam" id="hcCam" hidden>
+          <video id="hcVideo" playsinline muted></video>
+          <canvas id="hcCanvas"></canvas>
+          <div class="hc__read"><b id="hcRead">-</b><span class="hc__hold"><i id="hcHold"></i></span></div>
+        </div>
+
+        <div class="hc__btns" role="group" aria-label="Play a number">
+          <button type="button" data-n="1">1</button>
+          <button type="button" data-n="2">2</button>
+          <button type="button" data-n="3">3</button>
+          <button type="button" data-n="4">4</button>
+          <button type="button" data-n="5">5</button>
+          <button type="button" data-n="6">6</button>
+        </div>
+
+        <div class="hc__actions">
+          <button type="button" class="hc__cambtn" id="hcCamBtn">Start camera</button>
+          <button type="button" class="reset" id="hcReset">New game</button>
+          <span class="hc__best" id="hcBest" hidden></span>
+        </div>
+        <p class="hc__privacy">The camera video stays on your device. Nothing is recorded or uploaded.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07b GALLERY (appears only when photos are added in script.js) -->
+<section class="section gallery view-deck" id="gallery" hidden>
+  <span class="mark mark--tl">+</span><span class="mark mark--tr">+</span>
+  <div class="wrap">
+    <h2 class="big">GOOD<br>TIMES</h2>
+    <p class="lede">Off the screen and out of student mode. This is the rest of me.</p>
+    <div class="gallery__bar">
+      <div class="views" id="galleryViews" role="group" aria-label="Gallery layout">
+        <button type="button" data-view="deck" aria-pressed="true">Deck</button>
+        <button type="button" data-view="grid" aria-pressed="false">Grid</button>
+        <button type="button" data-view="mosaic" aria-pressed="false">Mosaic</button>
+      </div>
+    </div>
+
+    <div class="deck" id="galleryDeck">
+      <div class="deck__stage" id="deckStage" role="group" aria-label="Photo deck. Use the left and right arrow keys to flip through." tabindex="0"></div>
+      <div class="deck__ui">
+        <button type="button" id="deckPrev" aria-label="Previous photo">&#9664;</button>
+        <span class="deck__count" id="deckCount" aria-live="polite">1 / 1</span>
+        <button type="button" id="deckNext" aria-label="Next photo">&#9654;</button>
+      </div>
+      <p class="deck__hint">Swipe or drag a card, use the arrows, or tap a card to open it.</p>
+    </div>
+
+    <div class="shots" id="galleryGrid"></div>
+  </div>
+</section>
+
+</main>
+
+<!-- 08 CONTACT -->
+<footer class="contact" id="contact">
+  <span class="mark mark--tl">+</span><span class="mark mark--tr">+</span>
+  <div class="wrap contact__wrap">
+    <div class="contact__body">
+      <h2 class="big">LET&rsquo;S MAKE<br>SOMETHING.</h2>
+      <p class="lede">Got an idea, a project or a team that needs a curious builder? Say hello.</p>
+      <ul class="links" id="links"></ul>
+    </div>
+  </div>
+  <p class="foot">&copy; <span id="year">2026</span> Hitarth Vasa &middot; Learning and growing</p>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button type="button" class="lb__btn lb__close" id="lbClose" aria-label="Close photo">&times;</button>
+  <button type="button" class="lb__btn lb__prev" id="lbPrev" aria-label="Previous photo">&#9664;</button>
+  <figure class="lb__fig">
+    <img id="lbImg" alt="">
+    <video id="lbVideo" controls playsinline loop hidden></video>
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button type="button" class="lb__btn lb__next" id="lbNext" aria-label="Next photo">&#9654;</button>
+</div>
+
+</body>
+</html>
